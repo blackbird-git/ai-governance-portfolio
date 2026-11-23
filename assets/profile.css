@@ -154,3 +154,59 @@
   .showcase-resume-inner{display:block}
   .showcase-resume-link{display:inline-flex;margin-top:21px;white-space:normal}
 }
+
+
+/* Personal narrative and project work. Resume detail lives on the resume page. */
+.narrative-about{background:#fbfcfa;padding-top:clamp(52px,6vw,84px);padding-bottom:clamp(55px,6vw,83px)}
+.narrative-about .profile-about-grid{grid-template-columns:minmax(0,1fr) minmax(245px,315px);gap:clamp(32px,4.8vw,70px);align-items:start}
+.narrative-about .profile-intro-content{min-width:0}
+.narrative-about .profile-eyebrow{margin-bottom:12px}
+.narrative-about h1{font:500 clamp(3.45rem,5vw,5.3rem)/1.05 Newsreader,Georgia,serif;letter-spacing:-.05em;margin-bottom:29px}
+.narrative-opening{font-size:clamp(.98rem,1.32vw,1.08rem);line-height:1.85;color:#344b55;max-width:760px;margin:0 0 20px}
+.narrative-opening a{color:var(--teal-dark);border-bottom:1px solid #96b8ae}
+.narrative-qualification{font-size:.85rem;color:#48605f;font-weight:600;margin:26px 0 0}
+.narrative-about .profile-intro-meta{margin-top:18px}
+.narrative-about .profile-portrait-frame{max-width:315px;margin-top:20px}
+.narrative-about .profile-photo-accent{display:none}
+.narrative-about .profile-portrait-large{border-radius:6px;box-shadow:0 9px 28px rgba(21,51,53,.09)}
+.narrative-home .profile-section{padding-top:64px;padding-bottom:80px}
+.narrative-projects{background:#f6f8f6}
+.narrative-section-heading{display:flex;align-items:baseline;justify-content:space-between;gap:30px;margin-bottom:28px}
+.narrative-section-heading h2,.narrative-resume h2{font:500 clamp(2.5rem,3.7vw,3.75rem)/1.1 Newsreader,Georgia,serif}
+.narrative-section-heading p{font-size:.9rem;line-height:1.7;max-width:480px}
+.narrative-project-list{border-top:1px solid #cdd9d3}
+.narrative-project{display:grid;grid-template-columns:minmax(175px,.65fr) minmax(0,1.35fr);gap:clamp(25px,5vw,80px);padding:37px 0 41px;border-bottom:1px solid #cdd9d3}
+.narrative-project-heading{min-width:0}
+.narrative-project-type{font-size:.74rem;font-weight:700;color:#46776d;display:block;margin:0 0 12px}
+.narrative-project h3{font:500 clamp(1.95rem,2.6vw,2.65rem)/1.12 Newsreader,Georgia,serif;letter-spacing:-.03em;margin-bottom:14px}
+.narrative-project-heading p{font-size:.93rem;line-height:1.72;color:#526b72}
+.narrative-project-body{min-width:0}
+.narrative-project-body>p{max-width:780px;font-size:.95rem;line-height:1.78;margin:0 0 14px;color:#4d6269}
+.narrative-project-links{display:flex;gap:12px 30px;flex-wrap:wrap;margin-top:24px}
+.narrative-project-links a{font-weight:700;font-size:.85rem;color:var(--teal-dark);border-bottom:1px solid #91b6ac;padding-bottom:3px}
+.narrative-project-links a:hover{border-color:var(--teal-dark)}
+.narrative-resume{background:#fff}
+.narrative-resume-inner{display:flex;align-items:center;justify-content:space-between;gap:20px 40px}
+.narrative-resume-inner p{font-size:.94rem;line-height:1.7;max-width:580px;margin-top:13px}
+.narrative-resume-link{display:inline-block;white-space:nowrap;border:1px solid #82aa9c;border-radius:5px;padding:11px 20px;font-weight:700;font-size:.87rem;color:var(--teal-dark)}
+.narrative-resume-link:hover{background:#eef5f0}
+@media(min-width:941px) and (max-width:1160px){.narrative-about .profile-about-grid{grid-template-columns:minmax(0,1fr) 250px;gap:30px}.narrative-about .profile-portrait-frame{max-width:250px}}
+@media(min-width:651px) and (max-width:940px){.narrative-about .profile-about-grid{grid-template-columns:minmax(0,1fr) minmax(220px,290px);gap:25px}.narrative-about .profile-portrait-frame{max-width:290px}.narrative-project{grid-template-columns:minmax(160px,.65fr) minmax(0,1.35fr);gap:26px}}
+@media(max-width:650px){
+  .narrative-about{padding-top:30px;padding-bottom:43px}
+  .narrative-about .profile-about-grid{display:flex;flex-direction:column;gap:20px}
+  .narrative-about h1{font-size:clamp(3.05rem,10vw,3.85rem);margin-bottom:21px}
+  .narrative-opening{font-size:.95rem;line-height:1.75;margin-bottom:17px}
+  .narrative-qualification{margin-top:20px;font-size:.79rem}
+  .narrative-about .profile-portrait-frame{width:min(72vw,265px);max-width:265px;align-self:center;margin-top:4px}
+  .narrative-home .profile-section{padding-top:42px;padding-bottom:52px}
+  .narrative-section-heading{display:block;margin-bottom:20px}
+  .narrative-section-heading p{margin-top:9px;font-size:.86rem}
+  .narrative-project{display:block;padding:26px 0 30px}
+  .narrative-project h3{font-size:2.05rem;margin-bottom:9px}
+  .narrative-project-heading p{font-size:.91rem;margin-bottom:15px}
+  .narrative-project-body>p{font-size:.91rem;line-height:1.75}
+  .narrative-project-links{margin-top:19px;gap:12px 22px}
+  .narrative-resume-inner{display:block}
+  .narrative-resume-link{margin-top:20px;white-space:normal}
+}

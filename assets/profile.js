@@ -11,7 +11,7 @@
   const links=[...document.querySelectorAll('.profile-nav a')];
   const home=document.querySelector('.profile-home');
   if(home && 'IntersectionObserver' in window){
-    const sections=[...document.querySelectorAll('#about,#experience,#projects,#resume')];
+    const sections=[...document.querySelectorAll('#about,#projects,#resume')];
     const observer=new IntersectionObserver(entries=>{
       const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
       if(!visible)return;

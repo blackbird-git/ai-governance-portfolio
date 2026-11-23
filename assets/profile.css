@@ -301,3 +301,37 @@
  .web-resume .resume-project-entry{break-inside:avoid}
 }
 
+
+
+/* Portrait-first About layout: generous square image left, narrative right. */
+@media screen and (min-width:941px){
+  .narrative-about .profile-about-grid{
+    grid-template-columns:minmax(265px,38%) minmax(0,1fr);
+    align-items:start;
+    gap:clamp(28px,3.4vw,64px);
+  }
+  .narrative-about .profile-portrait-frame{
+    width:100%;max-width:390px;margin:0;justify-self:start;
+  }
+}
+@media screen and (min-width:651px) and (max-width:940px){
+  .narrative-about .profile-about-grid{
+    grid-template-columns:minmax(210px,34%) minmax(0,1fr);
+    align-items:start;gap:clamp(22px,3vw,32px);
+  }
+  .narrative-about .profile-portrait-frame{
+    width:100%;max-width:315px;margin:0;justify-self:start;
+  }
+}
+.narrative-about .profile-portrait-large{
+  aspect-ratio:1/1;object-fit:cover;object-position:center center;
+  border-radius:6px;
+}
+@media screen and (max-width:650px){
+  .narrative-about .profile-about-grid{
+    display:flex;flex-direction:column;gap:22px;
+  }
+  .narrative-about .profile-portrait-frame{
+    width:min(76vw,300px);max-width:300px;margin:0;align-self:center;
+  }
+}

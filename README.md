@@ -4,13 +4,13 @@ Personal AI governance, security, and enterprise technology portfolio at [ilyami
 
 ## Site structure
 
-- `index.html`: single-screen introduction and three prominent navigation buttons (My work, My experience, Resume)
+- `index.html`: scrolling personal portfolio with a light profile sidebar, uploaded portrait, enterprise experience, selected AI projects, education, and contact links
 - `work.html`: selected work and research, with links to detailed case studies and public evidence
 - `experience.html`: enterprise experience, perspective, education, and contact information
 - `resume.html`: browser-printable, general-purpose AI-focused résumé
 - `work/*.html`: project case studies for SafeGuard, the AI Security Lab, and Vera
 
-The home design follows the approved off-white/teal mockup. `assets/mountains.webp` is cropped mountain artwork from that mockup; it contains no embedded labels, buttons, or logo.
+The current design uses a fixed light profile sidebar on desktop and a collapsible header on mobile, with an optimized portrait in `assets/ilya-portrait.webp`. The content retains the off-white and teal palette. `assets/profile.css` and `assets/profile.js` provide the layout and navigation. The original `assets/mountains.webp` remains available for subtle page artwork.
 
 ## Hosting
 

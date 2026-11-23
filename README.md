@@ -5,7 +5,7 @@ Personal portfolio hosted at [ilyamir.com](https://ilyamir.com).
 ## Site structure
 
 - `index.html`: personal narrative about enterprise and independent AI work, detailed project summaries with direct links, and a separate résumé section.
-- `resume.html`: printable professional résumé, including education and verified enterprise and independent experience.
+- `resume.html`: expanded professional résumé with direct downloads of a two-page PDF and editable DOCX. Binary files are in `assets/`.
 - `work/*.html`: focused project case studies for SafeGuard, the AI Security Engineering Lab, and Vera.
 - `experience.html`, `work.html`: backwards-compatible redirects to homepage sections.
 

@@ -239,3 +239,65 @@
  .explainer-section p{font-size:.94rem;line-height:1.77}
  .explainer-links{margin-top:14px;padding:24px 0 28px}
 }
+
+
+/* Full professional resume. Preserve a conventional single-column reading flow. */
+.refreshed-resume-main{padding-top:34px}
+.resume-toolbar{max-width:940px;margin:0 auto 16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 24px}
+.resume-back{font-size:.83rem;font-weight:700;color:var(--teal-dark);border-bottom:1px solid #9bbcb2;padding-bottom:3px}
+.resume-toolbar-actions{display:flex;gap:12px 18px;align-items:center;flex-wrap:wrap}
+.resume-pdf-link{display:inline-flex;justify-content:center;align-items:center;padding:11px 17px;border-radius:5px;background:var(--teal-dark);color:#fff;font-size:.85rem;font-weight:700}
+.resume-pdf-link:hover{color:#fff;background:#06463f}
+.resume-docx-link{font-size:.85rem;font-weight:700;color:var(--teal-dark);border-bottom:1px solid #9bbcb2;padding-bottom:3px}
+.web-resume{max-width:940px;padding:49px clamp(27px,5vw,65px) 51px;border-radius:5px;box-shadow:0 7px 25px rgba(22,50,54,.035);color:#203745;font-family:Calibri,Carlito,Arial,sans-serif}
+.web-resume .resume-top{display:block;padding-bottom:19px;border-bottom:0}
+.web-resume .resume-top h1{font:bold clamp(2.2rem,3.8vw,3.2rem)/1.09 Calibri,Carlito,Arial,sans-serif;letter-spacing:-.027em}
+.web-resume .resume-tagline{font-size:1rem;line-height:1.35;color:var(--teal-dark);font-weight:700;margin:6px 0 9px}
+.web-resume .resume-contact-line{font-size:.84rem;line-height:1.6;color:#53636d;margin:0 0 1px}
+.web-resume a{color:var(--teal-dark)}
+.web-resume .resume-section{padding:0;margin:0 0 19px;border-top:0}
+.web-resume .resume-section h2{font:700 .97rem/1.35 Calibri,Carlito,Arial,sans-serif;text-transform:uppercase;letter-spacing:.025em;color:var(--teal-dark);padding-bottom:5px;border-bottom:1px solid #b4ceca;margin:0 0 10px}
+.web-resume .resume-section p,.web-resume .resume-section li{font:400 .93rem/1.56 Calibri,Carlito,Arial,sans-serif;color:#314650}
+.web-resume .resume-section p{margin:0 0 9px}
+.web-resume .resume-competencies p{margin:0 0 6px}
+.web-resume .resume-competencies strong,.web-resume .resume-section strong{color:#1d3541}
+.web-resume .resume-item{margin-bottom:17px}
+.web-resume .resume-role-heading{display:flex;justify-content:space-between;align-items:baseline;gap:7px 17px;flex-wrap:wrap;margin-bottom:5px}
+.web-resume .resume-role-heading h3{font:700 .98rem/1.4 Calibri,Carlito,Arial,sans-serif;color:#1f3946}
+.web-resume .resume-role-heading h3 span{font-size:.94rem;font-weight:400;color:#405d65}
+.web-resume .resume-date{font-size:.83rem;font-weight:650;white-space:nowrap;color:#395b62}
+.web-resume .resume-section ul{padding-left:21px;margin:6px 0 0}
+.web-resume .resume-section li{padding-left:1px;margin-bottom:6px;line-height:1.55}
+.web-resume .resume-project-entry{margin:0 0 15px}
+.web-resume .resume-project-entry h3{font:700 .97rem/1.36 Calibri,Carlito,Arial,sans-serif;margin:0 0 5px}
+.web-resume .resume-project-entry p{margin-bottom:7px}
+.web-resume .resume-project-entry a{border-bottom:1px solid #bfd6cf}
+.narrative-resume-links{display:flex;gap:10px 18px;align-items:center;flex-wrap:wrap}
+.narrative-resume-download{display:inline-flex;align-items:center;font-size:.85rem;font-weight:700;color:var(--teal-dark);border-bottom:1px solid #97b9ad;padding-bottom:3px}
+.narrative-resume-download:hover{border-bottom-color:var(--teal-dark)}
+@media(max-width:940px){.refreshed-resume-main{padding-top:27px}.resume-toolbar{width:100%}}
+@media(max-width:650px){
+ .refreshed-resume-main{padding:18px 12px 37px}
+ .resume-toolbar{margin-bottom:13px;padding:0 6px}
+ .resume-toolbar-actions{gap:10px}
+ .resume-pdf-link{padding:10px 14px}
+ .web-resume{padding:26px 20px 29px;border-radius:5px}
+ .web-resume .resume-top h1{font-size:2.35rem}
+ .web-resume .resume-tagline{font-size:.96rem}
+ .web-resume .resume-contact-line{font-size:.83rem;overflow-wrap:anywhere}
+ .web-resume .resume-section{margin-bottom:18px}
+ .web-resume .resume-section h2{font-size:.91rem}
+ .web-resume .resume-section p,.web-resume .resume-section li{font-size:.9rem;line-height:1.55}
+ .web-resume .resume-role-heading{display:block}
+ .web-resume .resume-role-heading h3{font-size:.95rem}
+ .web-resume .resume-date{display:block;font-size:.82rem;margin-top:3px}
+}
+@media print{
+ .resume-toolbar{display:none!important}
+ .refreshed-resume-main{padding:0!important;margin:0!important}
+ .web-resume{width:100%;max-width:none;border:0;box-shadow:none;padding:0!important;font-family:Calibri,Carlito,Arial,sans-serif}
+ .web-resume .resume-section{break-inside:auto}
+ .web-resume .resume-role-heading{break-after:avoid}
+ .web-resume .resume-project-entry{break-inside:avoid}
+}
+

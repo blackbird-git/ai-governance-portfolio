@@ -17,3 +17,61 @@
 @media(max-width:650px){.profile-about-grid{display:flex;flex-direction:column;align-items:start;gap:34px}.profile-portrait-frame{width:min(100%,330px);align-self:start}.profile-intro{padding-top:30px;padding-bottom:51px}.profile-intro h1{font-size:clamp(2.5rem,10vw,3.5rem)}.profile-intro-meta{margin-top:22px}.profile-section{padding-top:41px;padding-bottom:50px}.profile-section-heading{display:block}.profile-section-heading>p{margin-top:10px}.profile-experience-item{display:block}.profile-experience-title{margin-bottom:14px}.profile-project-grid{grid-template-columns:1fr;gap:13px}.profile-project{min-height:0;padding:23px 21px}.profile-project h3{font-size:1.85rem}.profile-resume-layout{align-items:start;flex-direction:column}.profile-resume-actions{align-items:start}.detail-facts{grid-template-columns:1fr;margin-top:34px}.detail-fact{padding:21px}.detail-approach{margin-top:39px}.detail-approach li{display:block}.detail-approach strong{display:block;margin-bottom:7px}.detail-status{margin-top:34px}.profile-resume-main{padding:21px 16px 35px}.resume-page{padding:23px 20px}.resume-top{display:block}.resume-contact{text-align:left;margin-top:15px}.resume-item>div:first-child{display:block}.resume-date{display:block;margin-top:4px}.profile-footer{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.profile-project{transition:none}}
 @media print{body{background:#fff;font:11pt/1.4 Arial,sans-serif}.profile-sidebar,.skip,.profile-footer,.resume-actions{display:none!important}.profile-home,.profile-detail-main,.profile-resume-main{margin:0;padding:0}.resume-page{border:0;box-shadow:none;padding:0;max-width:none}.resume-top h1{font:26pt Georgia,serif}.resume-section{padding:10px 0 5px;break-inside:avoid}.resume-section h2{font:15pt Georgia,serif}.resume-section p,.resume-section li{font-size:9pt;line-height:1.4}.resume-item{break-inside:avoid}}
+
+
+/* Phone-first refinements: clear hierarchy, compact profile, readable project cards. */
+@media screen and (min-width:651px) and (max-width:850px){
+  .profile-about-grid{grid-template-columns:minmax(0,1fr) minmax(190px,240px);gap:24px}
+  .profile-intro h1{font-size:clamp(2.4rem,5.5vw,3.15rem)}
+  .profile-portrait-frame{max-width:240px}
+  .profile-project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .profile-project:last-child{grid-column:1 / -1;min-height:0}
+  .profile-experience-item{grid-template-columns:minmax(160px,.55fr) minmax(0,1.45fr)}
+}
+@media screen and (max-width:650px){
+  .profile-sidebar{height:64px;min-height:64px;padding:8px 18px}
+  .profile-sidebar-name{font-size:1.48rem}
+  .profile-menu-toggle{width:42px;height:42px;min-width:42px}
+  .profile-nav{top:64px;max-height:calc(100dvh - 64px);overflow-y:auto;padding:9px 18px 15px}
+  .profile-nav a{min-height:48px;padding:11px 12px}
+  html{scroll-padding-top:73px}
+  .profile-section{scroll-margin-top:73px}
+  .profile-home>section,.profile-footer{padding-left:clamp(20px,5.5vw,28px);padding-right:clamp(20px,5.5vw,28px)}
+  .profile-intro{padding-top:28px;padding-bottom:38px}
+  .profile-about-grid{gap:22px}
+  .profile-intro h1{font-size:clamp(2.1rem,9vw,2.8rem);line-height:1.13}
+  .profile-eyebrow{margin-bottom:14px;font-size:.77rem}
+  .profile-lead{margin-top:18px;font-size:1rem;line-height:1.6}
+  .profile-description{font-size:.91rem;line-height:1.65;margin-top:11px}
+  .profile-intro-meta{gap:10px 18px;margin-top:19px;font-size:.84rem}
+  .profile-portrait-frame{width:min(69vw,255px);max-width:255px;align-self:center}
+  .profile-portrait-large{border-radius:11px}
+  .profile-section{padding-top:33px;padding-bottom:43px}
+  .profile-section-heading{margin-bottom:21px}
+  .profile-section h2{font-size:2.25rem}
+  .profile-experience-item{padding:19px 0 22px}
+  .profile-experience-title h3{font-size:1.56rem}
+  .profile-experience-detail>p{font-size:.9rem}
+  .profile-achievements{gap:7px;margin-top:13px}
+  .profile-achievements span{padding:6px 9px;font-size:.75rem;line-height:1.45}
+  .profile-project-grid{gap:12px}
+  .profile-project{padding:19px 20px 20px}
+  .profile-project-symbol{width:37px;height:37px;margin-bottom:11px}
+  .profile-project h3{font-size:1.72rem;margin-bottom:9px}
+  .profile-project p{font-size:.9rem;line-height:1.65;margin-bottom:17px}
+  .profile-resume-actions{align-items:flex-start}
+  .profile-resume-layout{gap:22px}
+  .profile-detail-main{padding:35px 22px 0}
+  .detail-header h1{font-size:clamp(2.7rem,10vw,3.4rem)}
+  .detail-back{margin-bottom:25px}
+  .detail-facts{gap:12px}
+  .detail-fact{padding:18px 19px}
+  .detail-links{padding-bottom:42px}
+  .profile-detail-main>.profile-footer{margin-left:-22px;margin-right:-22px}
+}
+@media screen and (max-width:350px){
+  .profile-portrait-frame{width:min(68vw,220px)}
+  .profile-intro h1{font-size:2.08rem}
+  .profile-sidebar-name{font-size:1.37rem}
+  .profile-home>section,.profile-footer{padding-left:18px;padding-right:18px}
+}

@@ -27,3 +27,5 @@ Personal biography and enterprise experience lead; projects are presented as wri
 ## Maintenance
 
 Verify any project statistics against the public project's current README before updating. Avoid linking a job-specific résumé publicly; the on-site résumé is general. Keep personal email and public links up to date. Review on mobile and desktop after changes.
+
+Portfolio deployment verified on Cloudflare Pages.

@@ -1,4 +1,4 @@
-# Ilya Mirkin — Professional portfolio
+# Ilya Mirkin: professional portfolio
 
 Personal AI governance, security, and enterprise technology portfolio at [ilyamir.com](https://ilyamir.com).
 

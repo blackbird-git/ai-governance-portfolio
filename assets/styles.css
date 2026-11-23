@@ -73,3 +73,12 @@ body.landing-page{background:#f8f7f5;color:#171b1d;min-width:280px}
 .contact-links a:hover{color:var(--teal-dark)}
 @media(max-width:850px){.work-entry{display:block}}
 @media(max-width:650px){.interior-heading{padding-top:34px;padding-bottom:30px}.work-entry{padding:29px 0 32px}.case-body h2{font-size:2rem}.contact-section{padding:47px 0 54px}}
+
+/* Simplified project lists and case studies */
+.work-entry{display:block;grid-template-columns:none;padding:30px 0 34px}
+.work-main{max-width:790px}
+.work-main h3{margin-top:0}
+.case-layout{display:block;width:min(800px,calc(100% - 80px));padding-top:52px}
+.case-body{width:100%;max-width:800px;margin:0 auto}
+.page-hero .container{max-width:800px}
+@media(max-width:680px){.case-layout{width:calc(100% - 40px);padding-top:32px}.work-entry{padding:26px 0 30px}}

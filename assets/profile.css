@@ -75,3 +75,82 @@
   .profile-sidebar-name{font-size:1.37rem}
   .profile-home>section,.profile-footer{padding-left:18px;padding-right:18px}
 }
+
+
+/* Project-and-experience focused portfolio, not a consulting landing page. */
+.profile-home-page .profile-sidebar-subtitle{font-size:.82rem;letter-spacing:0;line-height:1.48}
+.profile-home-page .profile-sidebar-foot{font-size:.78rem}
+.profile-home-page .profile-intro{background:#fbfcfa}
+.showcase-about{padding-top:clamp(45px,5vw,75px);padding-bottom:clamp(46px,5vw,76px)}
+.showcase-about .profile-about-grid{grid-template-columns:minmax(0,1fr) minmax(235px,325px);gap:clamp(35px,5.5vw,80px)}
+.showcase-about .profile-intro h1{font:500 clamp(3.55rem,5.2vw,5.8rem)/1.02 Newsreader,Georgia,serif;letter-spacing:-.05em;color:var(--ink)}
+.showcase-about .profile-eyebrow{margin-bottom:12px}
+.showcase-headline{font:500 clamp(1.55rem,2.4vw,2.25rem)/1.34 Newsreader,Georgia,serif;color:#28424c;margin-top:21px;letter-spacing:-.012em}
+.showcase-bio{font-size:.96rem;line-height:1.77;color:#50616b;max-width:660px;margin-top:20px}
+.showcase-education{margin-top:19px;font-size:.86rem;color:#304c55;font-weight:600}
+.showcase-about .profile-intro-meta{margin-top:18px}
+.showcase-about .profile-portrait-frame{max-width:325px}
+.showcase-about .profile-portrait-large{border-radius:8px;box-shadow:0 7px 24px rgba(25,49,54,.09)}
+.showcase-about .profile-photo-accent{display:none}
+.showcase-home .profile-section{border-color:#e0e6e2;padding-top:51px;padding-bottom:59px}
+.showcase-section-top{display:flex;justify-content:space-between;align-items:baseline;gap:20px 35px;margin-bottom:27px}
+.showcase-home .showcase-section-top h2,.showcase-home .showcase-resume-section h2{font-size:clamp(2.45rem,3.6vw,3.65rem);font-weight:500}
+.showcase-section-top>p{font-size:.88rem;line-height:1.6;max-width:430px}
+.showcase-experience-section{background:#fff}
+.showcase-role-header{display:flex;align-items:baseline;justify-content:space-between;gap:14px 24px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:16px}
+.showcase-role-header h3{font:500 clamp(1.75rem,2.5vw,2.45rem)/1.2 Newsreader,Georgia,serif}
+.showcase-role-header p{font-size:.83rem;margin-top:4px}
+.showcase-role-header>span{color:var(--teal-dark);font-size:.84rem;font-weight:700}
+.showcase-role-intro{font-size:.93rem;line-height:1.7;margin:20px 0 23px;max-width:830px}
+.showcase-achievement-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 25px;border-top:1px solid var(--line)}
+.showcase-achievement{padding:19px 4px 22px 0;border-bottom:1px solid var(--line)}
+.showcase-achievement h4{font-size:.93rem;line-height:1.45;color:#1d3743;margin:0 0 8px;font-weight:700}
+.showcase-achievement p{font-size:.88rem;line-height:1.68}
+.showcase-independent{display:grid;grid-template-columns:minmax(185px,.43fr) minmax(0,1fr);gap:20px;border-top:1px solid var(--line);margin-top:27px;padding-top:24px}
+.showcase-independent h3{font:500 1.5rem/1.2 Newsreader,Georgia,serif}
+.showcase-independent span{font-size:.78rem;color:var(--teal-dark);font-weight:600}
+.showcase-independent p{font-size:.87rem;line-height:1.67}
+.showcase-project-section{background:#f4f7f5}
+.showcase-project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;align-items:stretch}
+.showcase-project-card{background:white;border:1px solid #d9e3dd;border-radius:7px;padding:24px 22px 22px;display:flex;flex-direction:column;min-width:0}
+.showcase-project-label{color:#50776e;font-size:.72rem;font-weight:700;letter-spacing:.015em;display:flex;align-items:center;gap:9px}
+.showcase-project-mark{font:400 1.35rem/1 Newsreader,serif;color:var(--teal)}
+.showcase-project-card h3{font:500 clamp(1.7rem,2.1vw,2.2rem)/1.14 Newsreader,Georgia,serif;letter-spacing:-.022em;margin:18px 0 12px}
+.showcase-project-card>p{font-size:.88rem;line-height:1.72;margin:0 0 15px}
+.showcase-project-details{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:4px}
+.showcase-project-details span{font-size:.71rem;font-weight:650;color:#4c6f68;border:1px solid #dbe7e0;background:#f4f8f5;border-radius:3px;padding:4px 7px}
+.showcase-project-card .showcase-project-status{font-size:.81rem;line-height:1.6;color:#6c7b79;margin:15px 0 17px}
+.showcase-project-link{font-weight:700;font-size:.84rem;color:var(--teal-dark);border-top:1px solid var(--line);padding-top:14px;margin-top:auto}
+.showcase-project-link:hover{color:#064e48;text-decoration:underline;text-underline-offset:3px}
+.showcase-resume-section{background:#fff}
+.showcase-resume-inner{display:flex;align-items:center;justify-content:space-between;gap:24px 35px}
+.showcase-resume-inner>div{max-width:690px}
+.showcase-resume-inner p{font-size:.9rem;line-height:1.65;margin-top:9px}
+.showcase-resume-degree{color:#49695f;font-size:.82rem!important;font-weight:600}
+.showcase-resume-link{border:1px solid var(--teal-dark);color:var(--teal-dark);padding:12px 20px;border-radius:5px;font-size:.83rem;font-weight:700;white-space:nowrap}
+.showcase-resume-link:hover{background:#eef6f1}
+@media (max-width:1120px){.showcase-project-grid{gap:10px}.showcase-project-card{padding:20px 17px}}
+@media (min-width:651px) and (max-width:930px){.showcase-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.showcase-project-card:last-child{grid-column:1 / -1}.showcase-about .profile-about-grid{grid-template-columns:minmax(0,1fr) 235px}}
+@media (max-width:650px){
+  .showcase-about{padding-top:30px;padding-bottom:42px}
+  .showcase-about .profile-about-grid{display:flex;flex-direction:column;gap:20px}
+  .showcase-about .profile-intro h1{font-size:clamp(3.1rem,11vw,4rem)}
+  .showcase-headline{font-size:clamp(1.5rem,6vw,1.95rem);margin-top:14px}
+  .showcase-bio{font-size:.92rem;line-height:1.7;margin-top:16px}
+  .showcase-education{font-size:.8rem;margin-top:14px}
+  .showcase-about .profile-portrait-frame{width:min(65vw,250px);align-self:center}
+  .showcase-home .profile-section{padding-top:35px;padding-bottom:45px}
+  .showcase-section-top{display:block;margin-bottom:19px}
+  .showcase-section-top>p{margin-top:8px;font-size:.83rem}
+  .showcase-role-intro{margin:17px 0 18px;font-size:.9rem}
+  .showcase-achievement-grid{grid-template-columns:1fr}
+  .showcase-achievement{padding:16px 0 18px}
+  .showcase-independent{display:block;margin-top:21px;padding-top:18px}
+  .showcase-independent p{margin-top:9px}
+  .showcase-project-grid{grid-template-columns:1fr;gap:13px}
+  .showcase-project-card{padding:20px 20px 18px}
+  .showcase-project-card h3{font-size:1.9rem;margin:12px 0 10px}
+  .showcase-project-card>p{font-size:.9rem}
+  .showcase-resume-inner{display:block}
+  .showcase-resume-link{display:inline-flex;margin-top:21px;white-space:normal}
+}

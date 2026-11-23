@@ -47,3 +47,29 @@ body.landing-page{background:#f8f7f5;color:#171b1d;min-width:280px}
 @media(max-width:600px){.landing-main{padding:28px 21px clamp(119px,21vh,174px)}.landing-content h1{font-size:clamp(3rem,13.3vw,4.4rem);letter-spacing:-.075em}.landing-accent{height:5px;width:76px;margin:24px auto 28px}.landing-desktop-break{display:none}.landing-intro{font-size:clamp(1.1rem,4.5vw,1.48rem);line-height:1.46;max-width:420px;margin-bottom:32px}.landing-actions{grid-template-columns:1fr;gap:11px;max-width:350px}.landing-button{min-height:52px;border-radius:12px;font-size:1.12rem}.landing-mountains{height:clamp(118px,19vh,155px)}.interior-heading{padding:36px 0 35px}.interior-heading h1{font-size:3.5rem}.interior-heading>p:last-child{font-size:.96rem}}
 @media(max-height:600px) and (min-width:601px){.landing-main{padding:20px 24px 115px}.landing-content h1{font-size:clamp(3rem,9vh,4.6rem)}.landing-accent{margin:18px auto}.landing-intro{font-size:clamp(1.12rem,3.5vh,1.7rem);margin-bottom:22px}.landing-button{min-height:55px}.landing-mountains{height:113px}}
 @media print{.landing-mountains{display:none}.landing-main{min-height:auto}}
+
+/* Simplified project and experience pages */
+.work-entry{display:block;position:relative;padding:36px 2px 40px}
+.work-meta{font-size:.81rem;letter-spacing:0;text-transform:none;font-weight:600;color:#54716b;margin:0 0 11px}
+.work-main h3 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.interior-heading{padding-top:55px;padding-bottom:39px}
+.interior-heading h1{font-size:clamp(3.2rem,5.8vw,5.2rem)}
+.page-hero h1{font-size:clamp(3.2rem,5.6vw,5.4rem)}
+.page-hero{padding-top:57px;padding-bottom:45px}
+.breadcrumb{margin-bottom:26px}
+.page-hero .lead{max-width:800px}
+.case-layout{padding-top:54px;padding-bottom:68px}
+.case-body>section{padding-bottom:43px;margin-bottom:46px}
+.case-body h2{font-size:clamp(1.9rem,3vw,2.6rem)}
+.case-body .evidence-summary{border-left:2px solid #98b5ab;padding-left:18px;margin:22px 0}
+.contact-section{background:#e9f0ec;color:var(--ink);padding:64px 0 70px}
+.contact-section .eyebrow{color:var(--teal)}
+.contact-inner h2{font-size:clamp(2.6rem,5vw,4rem);margin:0 0 17px}
+.contact-inner>p:not(.eyebrow){color:#51666b}
+.contact-email{font-family:'DM Sans',sans-serif;font-size:clamp(1rem,2.2vw,1.55rem);color:var(--teal-dark);border-color:#7eaaa0}
+.contact-email:hover{color:#074c46}
+.contact-links{margin-top:29px}
+.contact-links a{color:#486b63}
+.contact-links a:hover{color:var(--teal-dark)}
+@media(max-width:850px){.work-entry{display:block}}
+@media(max-width:650px){.interior-heading{padding-top:34px;padding-bottom:30px}.work-entry{padding:29px 0 32px}.case-body h2{font-size:2rem}.contact-section{padding:47px 0 54px}}

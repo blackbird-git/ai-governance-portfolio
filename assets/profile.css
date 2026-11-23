@@ -210,3 +210,32 @@
   .narrative-resume-inner{display:block}
   .narrative-resume-link{margin-top:20px;white-space:normal}
 }
+
+
+/* Simple explanatory project pages: prose instead of summary cards. */
+.profile-detail-main.explainer-page{padding-top:clamp(36px,5vw,72px)}
+.explainer-page .explainer-header,.explainer-page .explainer-article{max-width:805px;margin-left:auto;margin-right:auto}
+.explainer-page .detail-back{margin-bottom:29px}
+.explainer-page .detail-type{font-size:.76rem;letter-spacing:.025em;text-transform:none}
+.explainer-page .explainer-header h1{font:500 clamp(3rem,5vw,4.8rem)/1.09 Newsreader,Georgia,serif;letter-spacing:-.044em;margin:7px 0 19px}
+.explainer-lead{font-size:clamp(1.13rem,1.8vw,1.37rem);line-height:1.65;color:#314a54;max-width:750px}
+.explainer-page .explainer-header{border-bottom:1px solid var(--line);padding-bottom:40px}
+.explainer-article{padding-top:15px;padding-bottom:30px}
+.explainer-section{padding-top:31px;margin-bottom:2px}
+.explainer-section h2{font:500 clamp(1.7rem,2.7vw,2.2rem)/1.24 Newsreader,Georgia,serif;letter-spacing:-.025em;margin-bottom:14px}
+.explainer-section p{font-size:.97rem;line-height:1.83;margin:0 0 16px;max-width:755px}
+.explainer-links{display:flex;flex-wrap:wrap;gap:14px 30px;padding:27px 0 32px;margin-top:23px;border-top:1px solid var(--line)}
+.explainer-links a{font-size:.87rem;font-weight:700;color:var(--teal-dark);padding-bottom:2px;border-bottom:1px solid #96b9ae}
+.explainer-links a:hover{border-bottom-color:var(--teal-dark)}
+@media(max-width:650px){
+ .profile-detail-main.explainer-page{padding-top:29px}
+ .explainer-page .detail-back{margin-bottom:23px}
+ .explainer-page .explainer-header h1{font-size:clamp(2.6rem,9vw,3.35rem)}
+ .explainer-lead{font-size:1.07rem;line-height:1.66}
+ .explainer-page .explainer-header{padding-bottom:27px}
+ .explainer-article{padding-top:3px}
+ .explainer-section{padding-top:25px}
+ .explainer-section h2{font-size:1.85rem}
+ .explainer-section p{font-size:.94rem;line-height:1.77}
+ .explainer-links{margin-top:14px;padding:24px 0 28px}
+}

@@ -1,13 +1,35 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fafbf9"><title>AI Security Engineering Lab | Ilya Mirkin</title><meta name="description" content="A local test environment for evaluating security controls around AI applications and tool use."><link rel="canonical" href="https://ilyamir.com/work/ai-security.html"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/profile.css?v=portfolio-20261122d"><script src="../assets/profile.js" defer></script></head><body class="profile-site profile-detail-page"><a class="skip" href="#main">Skip to content</a><aside class="profile-sidebar" aria-label="Profile and navigation">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fafbf9"><title>AI Security Engineering Lab | Ilya Mirkin</title><meta name="description" content="A local test environment for evaluating security controls around AI applications and tool use."><link rel="canonical" href="https://ilyamir.com/work/ai-security.html"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/profile.css?v=explainers-20261122"><script src="../assets/profile.js" defer></script></head><body class="profile-site profile-detail-page"><a class="skip" href="#main">Skip to content</a><aside class="profile-sidebar" aria-label="Profile and navigation">
    <div class="profile-sidebar-top"><a class="profile-sidebar-name" href="../index.html#about">Ilya Mirkin</a><p class="profile-sidebar-subtitle">Experience &amp; projects</p></div>
    <div class="profile-sidebar-rule" aria-hidden="true"></div>
    <nav id="profile-navigation" class="profile-nav" aria-label="Site navigation"><a href="../index.html#about"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/></svg><span>About</span></a><a href="../index.html#projects"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 9 5-9 5-9-5 9-5zM3 12l9 5 9-5M3 17l9 5 9-5"/></svg><span>Projects</span></a><a href="../index.html#resume"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM14 2v6h6M8 13h8M8 17h8"/></svg><span>Résumé</span></a></nav>
    <div class="profile-sidebar-foot"><span>Boise, Idaho</span><div class="profile-sidebar-social"><a href="mailto:ilyamir.mail@gmail.com">Email</a><a href="https://github.com/blackbird-git" target="_blank" rel="noopener noreferrer">GitHub</a></div></div>
    <button class="profile-menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="profile-navigation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
- </aside><main id="main" class="profile-detail-main">
- <div class="detail-header"><a class="detail-back" href="../index.html#projects">Back to projects</a><span class="detail-type">Applied AI security testing</span><h1>AI Security Engineering Lab</h1><p>A local test environment for evaluating security controls around AI applications and tool use.</p></div>
- <div class="detail-facts"><div class="detail-fact"><h2>Built</h2><p>A local lab using Python, FastAPI, Ollama, synthetic financial records, and Wazuh.</p></div><div class="detail-fact"><h2>Tested</h2><p>Unauthorized tool and data requests, prompt injection scenarios, and application enforcement of access boundaries.</p></div><div class="detail-fact"><h2>Documented</h2><p>Reproducible tests, observed authorization results, security events, and known limitations.</p></div></div>
- <section class="detail-approach"><h2>How it works</h2><ol><li><strong>Define the boundary</strong><span>Identify what the application must authorize before invoking tools or returning data.</span></li><li><strong>Run controlled tests</strong><span>Send permitted and unauthorized requests against synthetic records.</span></li><li><strong>Inspect evidence</strong><span>Check API responses, test results, and Wazuh monitoring events.</span></li></ol></section>
- <section class="detail-status"><h2>Status &amp; limitations</h2><p>Independent lab testing does not establish security in a production deployment. Results apply to the specific controlled cases tested.</p></section>
- <div class="detail-links"><a href="https://github.com/blackbird-git/ai-security-engineering-lab" target="_blank" rel="noopener noreferrer">GitHub repository</a></div>
- <footer class="profile-footer"><span>© <span data-year>2026</span> Ilya Mirkin</span><span>Boise, Idaho</span></footer></main></body></html>
+ </aside><main id="main" class="profile-detail-main explainer-page">
+  <header class="explainer-header">
+    <a class="detail-back" href="../index.html#projects">Back to projects</a>
+    <p class="detail-type">AI application security</p>
+    <h1>AI Security Engineering Lab</h1>
+    <p class="explainer-lead">A small test application built to answer one question: what stops an AI assistant from accessing information it shouldn't?</p>
+  </header>
+  <article class="explainer-article">
+    <section class="explainer-section">
+      <h2>The problem</h2>
+      <p>Picture an AI assistant helping someone look up financial records. Even if it has been instructed to respect privacy, a user might ask it to show somebody else's account or try to trick it into calling a restricted tool. Telling the model to behave isn't enough. The software around it must enforce the rules.</p>
+    </section>
+    <section class="explainer-section">
+      <h2>What I built</h2>
+      <p>Created a local application with Python, FastAPI, and Ollama, using invented financial records rather than real customer data. It includes rules defining which requests and data are permitted.</p>
+      <p>Then I deliberately tested those boundaries. Some requests were legitimate; others tried to retrieve unrelated records, trigger unauthorized tool actions, or manipulate the application through prompt injection. The tests checked whether the application allowed or rejected the request, regardless of what the language model said.</p>
+      <p>I also connected security events to Wazuh, so attempts and failures could be inspected in a monitoring system instead of disappearing into a chat transcript.</p>
+    </section>
+    <section class="explainer-section">
+      <h2>What the tests showed</h2>
+      <p>The controlled tests demonstrate how access checks can be enforced outside the model and how the resulting activity can be recorded. The code, test cases, observed behavior, and limitations are documented in the repository.</p>
+      <p>This is an independent lab using synthetic data. It is not evidence that a particular production AI system has been secured.</p>
+    </section>
+    <div class="explainer-links">
+      <a href="https://github.com/blackbird-git/ai-security-engineering-lab" target="_blank" rel="noopener noreferrer">View the code and tests on GitHub</a>
+    </div>
+  </article>
+  <footer class="profile-footer"><span>© <span data-year>2026</span> Ilya Mirkin</span><span>Boise, Idaho</span></footer>
+</main></body></html>
